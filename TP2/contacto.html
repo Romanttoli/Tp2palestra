@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- encoding de caracteres -->
+	<meta charset="UTF-8">
+
+	<!-- Meta para responsive design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Titulo unico en cada pagina HTML -->
+	<title>Palestra | Contacto</title>
+	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+	
+	<div class="header">
+    	<div><a href="index.html"><img src="imagenes/PALESTRA.svg" alt=""></a>
+        </div>
+    	<div>
+            <div id="nav-icon1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="navbar">
+        <a href="quienessomos.html">Quienes somos</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="hogar.html">Hogar Palestra</a>
+        <a href="oyechica.html">Oye Chica</a>
+        <a href="donaciones.html">Donaciones</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+	
+    <main class="pt-header"></main>
+
+    
+<div class="contenedorcontacto">
+
+    <h1><span>Contacto</span></h1>
+
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <h3>¡Queremos escucharte! Indicanos el motivo de tu mensaje en la casilla 
+            asunto para facilitar la comunicación lo más fluída posible. No olvides 
+            confirmar el envío.</h3>
+            <form action="">
+                <p>
+                    <label>Nombre Completo</label>
+                    <input type="text" name="fullname">
+                </p>
+                <p>
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Número</label>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Asunto</label>
+                    <input type="text" name="affair">
+                </p>
+                <p class="block">
+                   <label>Mensaje</label> 
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button>
+                        <h2 class="texto-blanco">ENVIAR</h2>
+                    </button>
+                </p>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <img src="imagenes/contacto.png" alt="" width="100%">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+
+        <p class="footer-links">
+            <a href="#">Quienes somos</a>
+        </p>
+
+        <p class="footer-company-name"><strong>Somos una ONG que cree en todos podemos tener oportunidades , nos atraviesa la fé y la esperanza.</strong></p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span><strong>Contacto</strong></span>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+54 0223 595-4153</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="asocpalestra@hotmail.com">asocpalestra@hotmail.com</a></p>
+            
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Redes Sociales</span>
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/PalestraONG/"><i class="fa fa-facebook"></i><img src="imagenes/facebookfooter.png"></a>
+            <a href="https://www.instagram.com/palestra.ong/?hl=es"><i class="fa fa-instagram"><img src="imagenes/instagramfooter.png"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i><img src="imagenes/youtubefooter.png">
+            </div> </a>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function(){
+    $('#nav-icon1').click(function(){
+        $(this).toggleClass('open');
+        $(".navbar").fadeToggle();
+    });
+});
+</script>
+
+
+</html>

@@ -1,0 +1,1714 @@
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root{
+    --azul: #1324BD;
+    --verde: #09A033;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Reglas globales 
+ 	de etiqueta */
+    
+    
+
+
+body{
+	/* Herencia */
+	font-family: Ubuntu;
+	font-size: 12px;
+	background-color: white;
+}
+
+h1{
+    font-size: 24px;
+    color: var(--azul);
+}
+
+h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+h3{
+    font-size: 12px;
+    font-weight:400;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* INICIO CARRUSEL */
+
+/* FINAL CARRUSEL */
+
+
+/* Reglas globales
+	de clase / componentes */
+
+
+.subtitulo{
+    margin-top: 80px;
+
+}
+
+.texto-blanco{
+    color: white;
+}
+.texto-azul{
+    color: var(--azul);
+}
+
+.texto-rosado{
+    color: #9B0D9E;
+}
+
+.texto-verde{
+    color: #09A033;
+}
+
+/*
+--------------------------------------------------------------------
+
+ clases estructura
+
+ ----------------------------------------------------------------- */
+
+ #nav-icon1{
+  width: 50px;
+  height: 35px;
+  position: relative;
+  margin: auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 80%;
+  background: white;
+  border-radius: 6px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 18px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 36px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.header{
+	background-image: url(imagenes/Fondo\ logo.png);
+	display: flex;
+	justify-content: space-between;	
+    padding: 30px;
+	width: 100vw;
+	height: 100px;
+    position: fixed; z-index: 3;
+}
+
+.navbar{
+    color: white;
+    background-color: #09a034ee;
+    width: 60%;
+    height: 100%;
+    position: fixed; z-index: 3;
+    top: 100px;
+    right: 0;
+    padding: 20px;
+    line-height: 2;
+	display: none;
+}
+
+.navbar a{
+    display: block;
+}
+
+/* Footer */
+
+.footer-distributed {
+    background-color: var(--azul);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 50px;
+}
+
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 0px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 30%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    
+    margin-left: 150px;
+    vertical-align: middle;
+
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+    font-weight: 400;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .foter-company-about {
+    line-height: 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-icons{
+
+ display: inline-flex;
+
+
+}
+
+.footer-distributed .footer-icons a:hover {
+    transform: translateY(3px) scale(1);
+}
+
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+/* Empieza Home*/
+
+#fondocarrusel{
+
+    background-image: url(imagenes/group_106.jpg);
+    height: 200px;
+    width: auto;
+}
+
+.pt-header{
+    padding-top: 176px;
+}
+
+.cronograma{
+	width: 100%;
+	height: auto;
+    padding: 50px;
+}
+
+#letrasazul{
+    color: var(--azul);
+}
+
+.pildora{
+	background-color: white;
+	width: 100%;
+	height: 250px;
+	margin: auto;
+    margin-top: 50px;
+    border-radius: 45px 0px 0px 0px;
+}
+
+
+#miniatura1{
+    background-image: url(imagenes/Pildora1.jpg);
+    width: 100%;
+    height: 125px;
+    border-radius: 45px 0px 0px 0px;
+}
+
+#miniatura2{
+    background-image: url(imagenes/Pildora2.jpg);
+    width: 100%;
+    height: 125px;
+    border-radius: 45px 0px 0px 0px;
+}
+
+#miniatura3{
+    background-image: url(imagenes/Pildora3.jpg);
+    width: 100%;
+    height: 125px;
+    border-radius: 45px 0px 0px 0px;
+}
+
+#miniatura4{
+    background-image: url(imagenes/Pildora4.jpg);
+    width: 100%;
+    height: 125px;
+    border-radius: 45px 0px 0px 0px;
+}
+
+#miniatura5{
+    background-image: url(imagenes/Pildora5.jpg);
+    width: 100%;
+    height: 125px;
+    border-radius: 45px 0px 0px 0px;
+}
+
+#miniatura6{
+    background-image: url(imagenes/Pildora6.jpg);
+    width: 100%;
+    height: 125px;
+    border-radius: 45px 0px 0px 0px;
+}
+
+
+.bajada1{
+    color: white;
+    background-color: var(--azul);
+    padding: 20px;
+}
+
+.bajada2{
+    color: white;
+    background-color: #09A033;
+    padding: 20px;
+}
+
+#cta{
+    color: white;
+    padding: 15px;
+    background-color: var(--azul);
+    border-radius: 15px 15px 15px 15px;
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.bloquefrase{
+    background-color: var(--azul); 
+    color: white;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.objetivos{
+    background-color: var(--azul);
+    padding: 50px;
+    height: 800px;
+    margin: auto;
+    margin-top: -140px;
+    color: white;
+}
+
+
+#contenidoobjetivo1{
+    background-image: url(imagenes/objetivosuno.jpg);
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+}
+
+#contenidoobjetivo2{
+    background-image: url(imagenes/objetivosdos.jpg);
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+}
+
+#contenidoobjetivo3{
+    background-image: url(imagenes/objetivostres.jpg);
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+}
+
+#contenidoobjetivo4{
+    background-image: url(imagenes/objetivoscuatro.jpg);
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+}
+
+
+.valores{
+    background-color: var(--azul);
+    padding: 50px;
+    margin: auto;
+    height: 680px;
+    color: white;
+}
+
+#contenidovalores1{
+    background-image: url(imagenes/valoresuno.jpg);
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+}
+
+#contenidovalores2{
+    background-image: url(imagenes/valoresdos.jpg);
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+}
+
+#contenidovalores3{
+    background-image: url(imagenes/valorestres.jpg);
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+}
+
+#contenidovalores4{
+    background-image: url(imagenes/valorescuatro.jpg);
+    background-position: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+}
+
+
+.banner-oyechica{
+	background-color: #9B0D9E;
+    color: white;
+	width: 100%;
+	height: 708px;
+	margin-top: 20%;
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+}
+
+#textooyechica{
+    margin-top: 20px;
+}
+
+#cta2{
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px 15px 15px 15px;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#imagenoyechica{
+    margin-left: -25px;
+    
+}
+
+
+/* Newsletter Home */
+
+.contenedornews{
+    width: 100vw;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.registrate{
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: left;
+    font-size: 3em;
+}
+
+.mas-abajo{
+    margin-top: 20px;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 white;
+}
+
+
+.contact-form {
+    background: white;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid #0400ff;
+}
+
+.contact-form form button {
+    background: #0400ff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: 10px ;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #00ff0d;
+    color: rgb(0, 0, 0);
+    transition: background-color 1s ease-out;
+    outline: 0;
+    border-radius: 10px ;
+}
+
+/* Contact Info Home */
+
+.contact-info {
+    background: rgb(255, 255, 255);
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 10rem 0;
+}
+
+.contact-info {
+    background-image: url(images/Group\ 126.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+/*Termina Home*/
+
+/*Empieza Quienes Somos*/
+
+.quienessomos{
+	width: 100%;
+	margin: auto;
+    padding: 50px;
+    margin-top: -75px;
+}
+
+.bajadaquienessomos{
+    padding-top: 20px;
+}
+
+#primeraimagen{
+    background-image: url(imagenes/primerimagenQS.jpg);
+    background-position: center;
+}
+
+.marco-modelo-verde{
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 40px 0px 0px 0px;
+    box-shadow: 10px 10px 0px rgba(9, 160, 52, 0.5);
+}
+
+.marco-modelo-azul{
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 40px 0px 0px 0px;
+    box-shadow: 10px 10px 0px #1324bd8a;
+}
+
+.titulomisionvision{
+    margin-top: 60px;
+}
+
+#segundaimagen {
+    background-image: url(imagenes/segundaimagenQS.jpg);
+    background-position: center;
+    width: 100%;
+    height: 330px;
+    margin: auto;
+    margin-top: 45px;
+    border-radius: 40px 0px 0px 0px;
+    box-shadow: 10px 10px 0px #1324bd8a;
+}
+
+
+#titulohistoria {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.tituloaños {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.miniatura-verde{
+    background-position: center;
+    width: 100%;
+    height: 125px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 20px 0px 0px 0px;
+    box-shadow: 10px 10px 0px rgba(9, 160, 52, 0.5) ;
+}
+
+.miniatura-azul{
+    background-position: center;
+    width: 100%;
+    height: 125px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 20px 0px 0px 0px;
+    box-shadow: 10px 10px 0px #1324bd8a;
+}
+
+#miniatura7 {
+    background-image: url(imagenes/imagen1998.jpg);
+}
+
+#miniatura8 {
+    background-image: url(imagenes/imagen2002.jpg);
+}
+
+#miniatura9 {
+    background-image: url(imagenes/imagen2007.jpg);
+}
+
+#miniatura10 {
+    background-image: url(imagenes/imagen2015.jpg);
+}
+
+#miniatura11 {
+    background-image: url(imagenes/imagen2020.jpg);
+}
+
+/*Termina Quienes Somos*/
+
+/*Empieza Actividades*/
+
+.cronogramaactividades{
+	width: 100%;
+	margin: auto;
+    padding: 50px;
+    margin-top: -75px;
+}
+
+.pildoraactividades{
+    color: white;
+	width: 100%;
+	height: 300px;
+	margin: auto;
+    margin-top: 50px;
+    border-radius: 45px 0px 0px 0px;
+}
+
+.miniatura {
+    width: 100%;
+    height: 125px;
+    border-radius: 45px 0px 0px 0px;
+
+}
+
+#miniatura12{
+    background-image: url(imagenes/futbol1.jpg);
+}
+
+#miniatura13{
+    background-image: url(imagenes/voley1.jpg);
+}
+
+#miniatura14{
+    background-image: url(imagenes/estirarse.jpg);
+}
+
+#miniatura15{
+    background-image: url(imagenes/futbol2.jpg);
+    
+}
+
+#miniatura16{
+    background-image: url(imagenes/correr1.jpg);
+}
+
+#miniatura17{
+    background-image: url(imagenes/futbol3.jpg);
+}
+
+#miniatura18{
+    background-image: url(imagenes/voley2.jpg);
+}
+
+#miniatura19{
+    background-image: url(imagenes/correr2.jpg);
+}
+
+#miniatura20{
+    background-image: url(imagenes/voley3.jpg);
+}
+
+#miniatura21{
+    background-image: url(imagenes/correr3.jpg);
+}
+
+.bajada1{
+    background-color: #1324BD;
+    padding: 20px;
+    color: white;
+}
+
+.bajada2{
+	background-color: #09A033;
+    padding: 20px;
+}
+
+#pildoragrande {
+    color: white;
+	width: 100%;
+	height: 320px;
+	margin: auto;
+    margin-top: 50px;
+}
+
+#imagengrande {
+    background-image: url(imagenes/nenesfutbol.jpg);
+	background-position: center;
+    width: 100%;
+	height: 320px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.pildoradeportes {
+    color: white;
+	width: 100%;
+	height: 280px;
+	margin: auto;
+    margin-top: 50px;
+    background-color: #e0ac1c;
+}
+
+.miniaturadeporte {
+    width: 100%;
+	height: 280px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.marco-modelo-verde{
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 40px 0px 0px 0px;
+    box-shadow: 10px 10px 0px rgba(9, 160, 52, 0.5);
+}
+
+.marco-modelo-azul{
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 40px 0px 0px 0px;
+    box-shadow: 10px 10px 0px #1324bd8a;
+}
+
+#imagenvoley{
+    background-image: url(imagenes/imagenvoley.jpg);
+    background-position: center;
+}
+
+#imagenatletismo {
+    background-image: url(imagenes/nenesatletismo.jpg);
+    background-position: center;
+}
+
+#imagenfisico {
+    background-image: url(imagenes/mujeresfisico.jpg);
+    background-position: center;
+}
+
+.deportestitulo {
+    text-align: center;
+    margin-top: 30px;
+    color: #09A033;
+}
+
+/*Termina Actividades*/
+
+/*Empieza Talleres*/
+
+.contenedortalleres {
+	height: 1050px;
+	width: 100%;
+	padding: 50px;
+    margin-top: -75px;
+}
+
+#miniatura22{
+    background-image: url(imagenes/tallercrear.jpg);
+    width: 100%;
+    height: 250px;
+    border-radius: 45px 0px 0px 0px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#miniatura23{
+    background-image: url(imagenes/tallerplanta.jpg);
+    width: 100%;
+    height: 250px;
+    border-radius: 45px 0px 0px 0px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.bajada3{
+    background-color: #09A033;
+    padding: 10px 10px 20px 20px ;
+    margin-top: 10px;
+}
+
+/*Termina Talleres*/
+
+/*Empieza Hogar Palestra*/
+
+.contenedorhogar {
+	height: 920px;
+	width: 100%;
+	padding: 50px;
+    margin-top: -40px;
+}
+
+#miniatura24{
+    background-image: url(imagenes/hogarpalestra.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 45px 0px 0px 0px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+#subtitulomapa{
+    margin-bottom: 20px;
+}
+/*Termina Hogar Palestra*/
+
+/*Empieza Oye Chica*/
+
+.texto-inicio-oyechica {
+    background-color: aqua;
+}
+
+.primera-foto-oyechica {
+    background-color: brown;
+}
+
+.contenedoroyechicauno {
+    height: 650px;
+    width: 100%;
+    padding: 50px;
+    margin-top: -75px;
+}
+
+.numeros{
+    height: 450px;
+    padding: 50px;
+}
+
+#oyechicapnguno {
+  margin-left: 0px;
+  margin-top: 40px;
+}
+
+.contenedorboton {
+  background-color: #9B0D9E;
+  width: 100%;
+  height: 55px;
+  border-radius: 15px;
+  margin-top: 25px;
+  text-align: center;
+} 
+
+.textoboton {
+  color: white; 
+  padding-top: 5px; 
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.contenedoroyechicados {
+  background-color: #1324BD;
+  height: 560px;
+  width: 100%;
+}
+
+.textoimagen {
+  padding: 50px;
+}
+
+.contenedoroyechicatres {
+  background-color: #9B0D9E;
+  height: 560px;
+  width: 100%;
+}
+
+.contenedoroyechicacuatro {
+    height: 700px;
+    width: 100%;
+    padding: 100px 50px;
+}
+
+#oyechicapngdos {
+  margin-top: 20px;
+}
+
+.contenedorredes { 
+  width: 100%;
+  margin-top: 40px;
+}
+
+.textoredes {
+  margin-top: -30px;
+  margin-left: 50px;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+/*Termina Oye Chica*/
+
+/*Empieza Donaciones*/
+
+.contenedordonaciones{
+    padding: 50px;
+    margin-top: -75px;
+}
+
+.container{
+    min-height: 70vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 30px;
+}
+
+
+.container form{
+    background-color: #1324bdce;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 75vw;
+    padding-top: 160px;
+}
+
+.container form .inputBox{
+    margin-top: 20px;
+}
+
+.container form .inputBox span{
+    display: block;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.container form .inputBox input,
+.container form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.container form .flexbox{
+    display: flex;
+    gap:15px;
+}
+
+.container form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.container form .submit-btn{
+    width: 100%;
+    background:linear-gradient(45deg, rgb(43, 86, 226), rgb(20, 255, 79));
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.container .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 220px;
+    width: 350px;
+}
+
+.container .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, rgb(47, 255, 20), rgb(63, 20, 255));
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px #1324BD;
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.container .card-container .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .image img{
+    height: 50px;
+}
+
+.container .card-container .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.container .card-container .front .flexbox{
+    display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.container .card-container .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}
+
+.container .card-container .back{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, rgb(63, 20, 255), rgb(47, 255, 20));
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+
+.container .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.container .card-container .back .box{
+    padding: 0 20px;
+}
+
+.container .card-container .back .box span{
+    color:#fff;
+    font-size: 15px;
+}
+
+.container .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.container .card-container .back .box img{
+    margin-top: 30px;
+    height: 30px;
+}
+
+/*Termina Donaciones*/
+
+/*Empieza contacto*/
+
+.contenedorcontacto{
+    margin-top: -75px;
+    padding: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contact-form{
+    margin-top: 20px;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -10px;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white(0, 0, 0);
+    border-bottom: 1px solid #0400ff;
+}
+
+.contact-form form button {
+    background: #0400ff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #00ff0d;
+    color: rgb(0, 0, 0);
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/*Termina contacto*/
+
+/* resons */
+
+@media(min-width: 700px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: center;
+    }
+
+}
+
+/*MEDIA QUERIES*/
+
+
+@media (max-width: 960px) {
+
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 960px) {
+
+    .header{
+        justify-content: center;
+    }
+
+    .navbar{
+        font-size: medium;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100vw;
+        height: 45px;
+        padding: 7px 30px 30px 30px;
+    }
+    
+    
+    .navbar a{
+        display: inline-block;
+    }
+
+    #nav-icon1{
+        display: none;
+    }
+
+    /*home*/
+    
+    /*actividades*/
+
+    .miniatura {
+        width: 100%;
+        height: 125px;
+        border-radius: 45px 0px 0px 0px;
+        background-repeat: no-repeat;
+    }
+    
+    #miniatura12{
+        background-image: url(imagenes/futbol1.jpg);
+    }
+    
+    #miniatura13{
+        background-image: url(imagenes/voley1.jpg);
+    }
+    
+    #miniatura14{
+        background-image: url(imagenes/estirarse.jpg);
+    }
+    
+    #miniatura15{
+        background-image: url(imagenes/futbol2.jpg);
+    }
+    
+    #miniatura16{
+        background-image: url(imagenes/correr1.jpg);
+    }
+    
+    #miniatura17{
+        background-image: url(imagenes/futbol3.jpg);
+    }
+    
+    #miniatura18{
+        background-image: url(imagenes/voley2.jpg);
+    }
+    
+    #miniatura19{
+        background-image: url(imagenes/correr2.jpg);
+    }
+    
+    #miniatura20{
+        background-image: url(imagenes/voley3.jpg);
+    }
+    
+    #miniatura21{
+        background-image: url(imagenes/correr3.jpg);
+    }
+    
+    .bajada1{
+        background-color: #1324BD;
+        padding: 20px;
+        color: white;
+        width: 380px;
+        
+    }
+    
+    .bajada2{
+        background-color: #09A033;
+        padding: 20px;
+        width: 380px;
+
+    }
+    
+    #pildoragrande {
+        color: red;
+        width: 100%;
+        height: 320px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    #imagengrande {
+        background-image: url(imagenes/nenesfutbol.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 380px;
+        height: 320px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    
+    .pildoradeportes {
+        color: white;
+        width: 100%;
+        height: 280px;
+        margin: auto;
+        margin-top: 50px;
+        background-color: #e0ac1c;
+    }
+    
+    .miniaturadeporte {
+        width: 100%;
+        height: 280px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    
+    .marco-modelo-verde{
+        width: 380px;
+        height: 250px;
+        margin: auto;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        border-radius: 40px 0px 0px 0px;
+        box-shadow: 10px 10px 0px rgba(9, 160, 52, 0.5);
+    }
+    
+    .marco-modelo-azul{
+        width: 380px;
+        height: 250px;
+        margin: auto;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        border-radius: 40px 0px 0px 0px;
+        box-shadow: 10px 10px 0px #1324bd8a;
+    }
+    
+    #imagenvoley{
+        background-image: url(imagenes/imagenvoley.jpg);
+    }
+    
+    #imagenatletismo {
+        background-image: url(imagenes/nenesatletismo.jpg);
+    }
+    
+    #imagenfisico {
+        background-image: url(imagenes/mujeresfisico.jpg);
+
+    }
+    
+    .deportestitulo {
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+        color: #09A033;
+    }
+
+    /*quienes somos*/
+
+    /*hogar*/
+
+    /*talleres*/
+
+    .contenedortalleres {
+        padding: 100px;
+        margin-top: -50px;
+    }
+    
+    .talleres {
+        display: flex;
+        align-content: flex-start;
+    }
+
+    .naranja {
+
+        justify-content:space-around;
+    }
+    
+    #miniatura22{
+        background-image: url(imagenes/tallercrear.jpg);
+        width: 45%;
+        height: 250px;
+        border-radius: 45px 0px 0px 0px;
+        margin: auto;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+    }
+    
+    #miniatura23{
+        background-image: url(imagenes/tallerplanta.jpg);
+        width: 45%;
+        height: 250px;
+        border-radius: 45px 0px 0px 0px;
+        margin: auto;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+    }
+    
+    .bajada3{
+        background-color: #09A033;
+        padding: 10px 10px 20px 20px ;
+        margin-top: 10px;
+       
+    }
+
+    /*oyechica*/
+
+    .contenedoroyechicauno {
+        padding: 100px;
+        margin-top: -50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .numeros{
+        
+        justify-content: space-between;
+    }
+
+    .naranjas{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #subtitulooyehica{
+        padding-left: 50px;
+    }
+
+    #oyechicapnguno {
+      margin-left: -45px;
+      margin-top: 40px;
+    }
+    
+    .contenedorboton {
+      background-color: #9B0D9E;
+      width: 300px;
+      height: 55px;
+      border-radius: 15px;
+      margin-top: 25px;
+      text-align: center;
+    } 
+    
+    .textoboton {
+      color: white; 
+      padding-top: 5px; 
+      font-size: 36px;
+      font-weight: bold;
+    }
+    
+    .contenedoroyechicados {
+      background-color: #1324BD;
+      height: 560px;
+      width: 100%;
+    }
+    
+    .textoimagen {
+      padding: 50px;
+    }
+    
+    .contenedoroyechicatres {
+      background-color: #9B0D9E;
+      height: 560px;
+      width: 100%;
+    }
+    
+    .contenedoroyechicacuatro {
+        height: 700px;
+        width: 100%;
+        padding: 100px 50px;
+    }
+    
+    #oyechicapngdos {
+      margin-left: -20px;
+      margin-top: 20px;
+    }
+    
+    .contenedorredes { 
+      width: 100%;
+      margin-top: 40px;
+    }
+    
+    .textoredes {
+      margin-top: -30px;
+      margin-left: 50px;
+      font-size: 14px;
+      font-weight: bold;
+    
+    }
+
+    /*donaciones*/
+    
+    .contenedordonaciones{
+        margin-top: -50px;
+        padding-left: 20%;
+    
+    }
+    
+    .container{
+        min-height: 10vh;
+        min-width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        padding-bottom: 30px;
+    }
+    
+    .container form{
+        background-color: #1324bdce;
+        border-radius: 5px;
+        box-shadow: 0 10px 15px rgba(0,0,0,.1);
+        padding: 20px;
+        width: 960px;
+        padding-top: 160px;
+    }
+    
+    .container .card-container{
+        margin-bottom: -150px;
+        position: relative;
+        height: 250px;
+        width: 400px;
+    }
+
+    .contact-info {
+        margin-top: 55px;
+    }
+
+    /*contacto*/
+    
+    .contenedorcontacto{
+        margin-top: -50px;
+        padding: 100px;
+    }
+    
+    .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+    
+    .contact-form form button,
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 230px;
+        padding: .5em;
+        border: none;
+        background: none;
+        outline: 0;
+        color: white(0, 0, 0);
+        border-bottom: 1px solid #0400ff;
+    }
+    
+    .contact-form form button {
+        background: #0400ff;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+    }
+
+
+}       
